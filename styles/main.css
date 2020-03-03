@@ -26,22 +26,22 @@
     top: 0;
     height: 400px;
     background-color: #4b9aaa;
-    -webkit-animation: rotate-watch 60s linear infinite;
-            animation: rotate-watch 60s linear infinite; }
+    -webkit-animation: rotate-hand 60s linear infinite;
+            animation: rotate-hand 60s linear infinite; }
   .stop-watch__minute-hand {
     top: 160px;
     height: 240px;
     background-color: #d15559;
-    -webkit-animation: rotate-watch 3600s linear infinite;
-            animation: rotate-watch 3600s linear infinite; }
+    -webkit-animation: rotate-hand 3600s linear infinite;
+            animation: rotate-hand 3600s linear infinite; }
 
-@-webkit-keyframes rotate-watch {
+@-webkit-keyframes rotate-hand {
   0% {
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
 
-@keyframes rotate-watch {
+@keyframes rotate-hand {
   0% {
     transform: rotate(0); }
   100% {
