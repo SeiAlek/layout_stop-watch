@@ -1,0 +1,50 @@
+.page__stop-watch {
+  margin: 20px auto; }
+
+.stop-watch {
+  position: relative;
+  height: 800px;
+  width: 800px; }
+  .stop-watch::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    left: 50%;
+    background-color: #4b9aaa;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; }
+  .stop-watch__hand {
+    position: absolute;
+    left: 395px;
+    width: 10px;
+    border-radius: 6px;
+    transform-origin: bottom; }
+  .stop-watch__second-hand {
+    top: 0;
+    height: 400px;
+    background-color: #4b9aaa;
+    -webkit-animation: rotate-watch 60s linear infinite;
+            animation: rotate-watch 60s linear infinite; }
+  .stop-watch__minute-hand {
+    top: 160px;
+    height: 240px;
+    background-color: #d15559;
+    -webkit-animation: rotate-watch 3600s linear infinite;
+            animation: rotate-watch 3600s linear infinite; }
+
+@-webkit-keyframes rotate-watch {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes rotate-watch {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=main.css.map */
