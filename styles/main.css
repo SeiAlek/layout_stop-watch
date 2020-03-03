@@ -26,14 +26,22 @@
     top: 0;
     height: 400px;
     background-color: #4b9aaa;
-    -webkit-animation: rotate-hand 60s linear infinite;
-            animation: rotate-hand 60s linear infinite; }
+    -webkit-animation: rotate-hand 60s infinite;
+            animation: rotate-hand 60s infinite;
+    -webkit-animation-timing-function: steps(60, start);
+            animation-timing-function: steps(60, start);
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; }
   .stop-watch__minute-hand {
     top: 160px;
     height: 240px;
     background-color: #d15559;
-    -webkit-animation: rotate-hand 3600s linear infinite;
-            animation: rotate-hand 3600s linear infinite; }
+    -webkit-animation: rotate-hand 3600s infinite;
+            animation: rotate-hand 3600s infinite;
+    -webkit-animation-timing-function: steps(60, start);
+            animation-timing-function: steps(60, start);
+    -webkit-animation-delay: 60s;
+            animation-delay: 60s; }
 
 @-webkit-keyframes rotate-hand {
   0% {
